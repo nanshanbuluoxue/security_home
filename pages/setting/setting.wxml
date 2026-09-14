@@ -1,0 +1,37 @@
+<!--subpkg/pages/setting/setting.wxml-->
+<view class="setting">
+  <van-cell-group title="温度阈值设置" >
+  <van-cell  title="温度最低值">
+    <van-stepper value="{{ mlt }}" step="1" decimal-length="{{ 1}}" min="{{slt}}" max="{{mht}}" input-width="40px" bind:change="change" data-class="lt"/>
+  </van-cell>
+  <van-cell title="温度最高值"  >
+    <van-stepper value="{{ mht }}" step="1" decimal-length="{{ 1}}" min="{{mlt}}" max="{{sht}}" input-width="40px" bind:change="change" data-class="ht"/>
+  </van-cell>
+</van-cell-group>
+<van-cell-group title="湿度阈值设置">
+  <van-cell title="湿度最低值"  >
+    <van-stepper value="{{ mlh }}" step="1" decimal-length="{{ 1}}" min="{{slh}}" max="{{mhh}}"  input-width="40px" bind:change="change" data-class="lh"/>
+    </van-cell>
+  <van-cell title="湿度最高值"  >
+    <van-stepper value="{{ mhh }}" step="1" decimal-length="{{ 1}}" min="{{mlh}}" max="{{shh}}" input-width="40px" bind:change="change" data-class="hh"/>
+    </van-cell>
+</van-cell-group>
+<van-cell-group title="灯开关">
+
+  <van-cell title="开关1"  >
+    <van-switch checked="{{ mlight}}" bind:change="switchChange" data-class="light" />
+    <!-- <switch checked="{{ mlight }}" bind:change="switchChange" data-class="light" ></switch> -->
+  </van-cell>
+</van-cell-group>
+<van-cell-group title="蜂鸣器开关">
+  <van-cell title="开关2">
+    <van-switch checked="{{ mbeeper }}"  bind:change="switchChange"  data-class="beeper"/>
+  </van-cell>
+</van-cell-group>
+<van-row>
+<van-col span="10" offset="9">
+  <van-button type="primary" bind:tap="storeData">保存并上传</van-button>
+</van-col>
+</van-row>
+</view>
+

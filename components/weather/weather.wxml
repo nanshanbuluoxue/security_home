@@ -1,0 +1,18 @@
+<!--components/weather/weather.wxml-->
+<view class="container">
+<view class="weather today">
+<view>
+<view class='date'>今天</view>
+<view class='location'>{{province}}{{parent_city}}</view>
+<view class='tmp'>室外温度：{{today.tempMin}}℃~{{today.tempMax}}℃</view>
+<view class='hum'>室外湿度: {{today.humidity}}%</view>
+<view class='cond_txt'>{{today.textDay}}</view>
+</view>
+<view>
+<view class='weather_icon'>
+<image src='{{todyIcon}}'></image>
+</view>
+<view class='lastUpdateDate'>最近更新：{{update}}</view>
+</view>
+</view>
+</view>

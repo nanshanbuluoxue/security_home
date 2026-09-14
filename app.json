@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/about/about",
+    "pages/setting/setting",
+    "pages/analysis/analysis"
+  ],
+  "subpackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "pages/clause/clause",
+        "pages/feedback/feedback",
+        "pages/help/help"
+      ]
+    }
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/imags/home.png",
+        "selectedIconPath": "static/imags/home_active.png"
+      },
+      {
+        "pagePath": "pages/analysis/analysis",
+        "text": "数据",
+        "iconPath": "static/imags/data.png",
+        "selectedIconPath": "static/imags/data-active.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "static/imags/setting.png",
+        "selectedIconPath": "static/imags/setting-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "static/imags/about.png",
+        "selectedIconPath": "static/imags/about-active.png"
+      }
+    ]
+  },
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#efefef",
+    "navigationBarTitleText": "智能安防",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "my-weather": "/components/weather/weather",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "qiun-wx-ucharts":  "@qiun/wx-ucharts"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getFuzzyLocation"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

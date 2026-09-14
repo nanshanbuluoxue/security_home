@@ -1,0 +1,37 @@
+<!--subpkg/pages/clause/clause.wxml-->
+<view class="container">
+  <view class="section">
+    <view class="title">用户注册与账号</view>
+    <view class="content">用户注册微信小程序账号时需提供真实有效的个人信息，并承担对账号和密码的保密责任。用户应当确保所提供的个人信息真实、准确，并且在信息发生变更时及时更新。</view>
+  </view>
+  <view class="section">
+    <view class="title">隐私政策</view>
+    <view class="content">我们尊重并保护用户的个人隐私，承诺不会未经授权向第三方公开、透露用户个人信息。我们将按照隐私政策收集、使用和保护用户的个人信息，用户可以在隐私政策中了解详细信息。</view>
+  </view>
+  <view class="section">
+    <view class="title">服务内容</view>
+    <view class="content">微信小程序提供智能家居安防系统的远程监控与控制功能，用户可以通过小程序实时查看家居状态、接收报警信息，并进行远程操作。用户需自行购买并安装智能设备，并承担相应的设备使用、维护和更新责任。</view>
+  </view>
+  <view class="section">
+    <view class="title">用户行为规范</view>
+    <view class="content">用户在使用微信小程序时不得发布违法、淫秽、诽谤等内容，不得侵犯他人合法权益，不得进行恶意攻击、破坏等行为。用户不得利用微信小程序进行任何违法活动，如诈骗、盗窃等，一经发现将依法追究责任。</view>
+  </view>
+  <view class="section">
+    <view class="title">知识产权保护</view>
+    <view class="content">微信小程序的所有知识产权均归属于开发者，用户在使用过程中不得侵犯微信小程序的知识产权。用户不得未经授权复制、传播微信小程序的任何内容，包括但不限于文字、图片、音视频等。</view>
+  </view>
+  <view class="section">
+    <view class="title">责任限制</view>
+    <view class="content">用户在使用微信小程序时应当自行承担风险，开发者不对用户在使用过程中产生的任何直接或间接损失负责。对于因不可抗力、计算机病毒、黑客攻击等非人为因素导致的服务中断、数据丢失等情况，开发者不承担责任。</view>
+  </view>
+  <view class="section">
+    <view class="title">服务变更和终止</view>
+    <view class="content">开发者有权根据实际情况变更微信小程序的功能和服务内容，如需终止服务，将提前通知用户并尽力协助用户备份数据等工作。</view>
+  </view>
+  <view class="section">
+    <view class="title">其他条款</view>
+    <view class="content">本条款受中华人民共和国法律管辖，用户和开发者一致同意在发生纠纷时提交至有管辖权的人民法院解决。</view>
+  </view>
+  <view class="copyright">© 2024 switch_c. All rights reserved.</view>
+</view>
+

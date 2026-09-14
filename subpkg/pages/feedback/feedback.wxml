@@ -1,0 +1,7 @@
+<!--subpkg/pages/feedback/feedback.wxml-->
+<view class="container">
+  <view class="feedback-form">
+    <textarea class="feedback-input" placeholder="请输入您的反馈意见"></textarea>
+    <button class="submit-button" bindtap="submitFeedback">提交反馈</button>
+  </view>
+</view>

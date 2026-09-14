@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* vertical-align: middle; */
+}
+
+.login{
+  display: flex;
+  justify-content: space-around;
+}
+
+.userinfo-button{
+  border: none; /* 去除边框 */
+  background-color: transparent; /* 设置透明背景 */
+}
+.userinfo-avatar {
+  overflow:hidden;  
+  display: block;
+  width: 168rpx;
+  height: 168rpx;
+  margin-top: 70rpx;
+  border-radius: 50%;
+}
+
+
+.userinfo-nickname {
+  margin-top: 30rpx;
+  justify-content: space-around;
+ margin-left: 25%;
+  color: #585858;
+  font-family: Songti SC;
+  font-size: 32rpx;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  height: 88rpx;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+
+.list-name {
+  margin-left: 32rpx;
+  line-height: 88rpx;
+  font-family: PingFang SC;
+  font-size: 34rpx;
+  color: #000;
+  
+}
+
+.list-icon {
+  margin-top: 30rpx;
+  margin-left: 538rpx;
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.list-container {
+  margin-top: 98rpx;
+  width: 100%;
+}

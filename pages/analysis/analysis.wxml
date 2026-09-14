@@ -1,0 +1,45 @@
+<!--pages/analysis/analysis.wxml-->
+
+<view class="container">
+  <view class="header">
+    <text class="title">温度历史记录</text>
+  </view>
+  <view class="content">
+    <view class="charts-box">
+  <qiun-wx-ucharts 
+    type="line"
+    opts="{{opts1}}"
+    chartData="{{chartData_tem}}"
+    ontouch="{{true}}"
+  />
+</view>
+  </view>
+<!--  -->
+<view class="header">
+    <text class="title">湿度历史记录</text>
+  </view>
+  <view class="content">
+    <view class="charts-box">
+  <qiun-wx-ucharts 
+    type="line"
+    opts="{{opts2}}"
+    chartData="{{chartData_hum}}"
+    ontouch="{{true}}"
+  />
+</view>
+  </view>
+  <!-- -->
+  <view class="header">
+    <text class="title">气体浓度历史记录</text>
+  </view>
+  <view class="content">
+    <view class="charts-box">
+  <qiun-wx-ucharts 
+    type="line"
+    opts="{{opts3}}"
+    chartData="{{chartData_gas}}"
+    ontouch="{{true}}"
+  />
+</view>
+  </view>
+</view>

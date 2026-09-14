@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<my-weather></my-weather>
+<view wx:if="{{!connectflag}}">
+<van-notice-bar
+  left-icon="volume-o"
+  text="{{inform1}}"
+/>
+</view>
+<view class='connect'>
+    <button type="primary" bindtap="connect">{{conenctBtnText}}</button>
+    <button type="warn" disabled="{{!connectflag}}" bindtap="disconnect">断开连接</button>
+</view>
+<view class="grid-list">
+  <view class="grid-item">
+<image src="../../static/imags/home/温度.png"></image>
+<text>温度：{{temperature}}℃</text>
+</view>
+<view class="grid-item">
+<image src="../../static/imags/home/空气湿度.png"></image>
+<text>空气湿度：{{humidity}}%</text>
+</view>
+<view class="grid-item">
+<image src="../../static/imags/home/可燃气体浓度显示.png"></image>
+<text>气体浓度：{{gas}}ppm</text>
+</view>
+<view class="grid-item">
+<image src="../../static/imags/home/光照.png"></image>
+<text>光照：{{photo}}cd</text>
+</view>
+
+<view class="grid-item">
+<image wx:if="{{!stat_person}}" src="../../static/imags/home/人.png"></image>
+<image wx:else src="../../static/imags/home/有人.png"></image>
+<text>有无人：{{stat_person?"有":"无"}}</text>
+</view>
+<view class="grid-item">
+<image src="../../static/imags/home/light.png"></image>
+<view>灯：
+<switch checked="{{light}}" bindchange="changeLight" class="light_switch"/>
+</view>
+</view>
+<view class="grid-item">
+<image src="../../static/imags/home/家电_蜂鸣器.png"></image>
+<view>蜂鸣器：
+<switch checked="{{beeper}}" bindchange="changeBeeper" class="beeper_switch"/>
+</view>
+</view>
+<view class="grid-item" bind:tap="warntap">
+  
+<view class="warn-text"  wx:if="{{warnnum==0}}" style="font-size:medium;color:black;">警告数：{{warnnum}}</view>
+<view class="warn-text"  wx:elif="{{warnnum==1}}" style="font-size:medium;color:rgb(236, 197, 24);">警告数：{{warnnum}}</view>
+<view class="warn-text"  wx:else style="font-size:medium;color:red;">警告数：{{warnnum}}</view>
+</view>
+
+<van-dialog id="van-dialog" /> 
+<!-- <view class="grid-item">
+<navigator url="/subpkg/pages/setting/setting">
+<button type="primary">跳转</button>
+</navigator>
+</view> -->
+</view>
+
+<!-- <button type="primary" bind:tap="alert">点我警告</button> -->
+
+
+
+
+

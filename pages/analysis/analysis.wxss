@@ -1,0 +1,32 @@
+/* pages/analysis/analysis.wxss */
+/* index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0; /* 设置背景色 */
+}
+
+.header{
+  padding: 20rpx;
+  background-color: #007aff; /* 设置顶部标题栏背景色 */
+  width: 100%;
+  text-align: center;
+}
+
+
+.title {
+  font-size: 30rpx;
+  color: #fff; /* 设置标题文字颜色 */
+}
+.content{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #fff; /* 设置内容区背景色 */
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+.charts-box {
+  width: 90%;
+  height: 250px;
+}

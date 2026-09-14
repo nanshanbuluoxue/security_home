@@ -1,0 +1,24 @@
+<!--subpkg/pages/help/help.wxml-->
+<view class="container">
+  <view class="section">
+    <view class="title">当地天气查看</view>
+    <view class="content">用户可以查看当地的天气情况，包括当前温度、湿度和天气状况，帮助用户了解当地的天气情况。</view>
+  </view>
+  <view class="section">
+    <view class="title">家庭环境监测</view>
+    <view class="content">实时显示家中的温度、湿度、气体浓度和光照浓度等数据，让用户了解家庭环境的实时状况。</view>
+  </view>
+  <view class="section">
+    <view class="title">灯光控制</view>
+    <view class="content">用户可以通过该软件对家中的灯光进行控制，实现开关灯、调节亮度等功能，提高家居舒适度和节能效果。</view>
+  </view>
+  <view class="section">
+    <view class="title">生物入侵监测</view>
+    <view class="content">系统具有生物入侵监测功能，通过传感器检测家庭内部是否有生物入侵，如小动物或其他非预期的生物活动，以便及时警示用户。</view>
+  </view>
+  <view class="section">
+    <view class="title">报警功能</view>
+    <view class="content">用户可以设定温湿度的最大最小报警值，当家中温度或湿度超过设定值时，系统会自动产生报警，提醒用户关注并采取相应措施。</view>
+  </view>
+  <view class="copyright">© 2024 switch_c. All rights reserved.</view>
+</view>

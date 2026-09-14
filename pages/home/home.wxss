@@ -1,0 +1,43 @@
+.connect {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+
+button[type="primary"],
+button[type="warn"] {
+  width: 40% !important;
+  font-size: 28rpx;
+  font-weight: normal;
+  margin: 0 !important;
+}
+
+.grid-list{
+  display: flex;
+  /*可换行 */
+  flex-wrap:wrap; 
+  border-top: 1rpx solid #efefef;
+  border-left: 1rpx solid #efefef;
+}
+.grid-item{
+ width: 50%;
+ height: 200rpx;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border-right: 1rpx solid #efefef;
+ border-bottom: 1rpx solid #efefef;
+ /* 规定边框不影响大小 */
+ box-sizing: border-box;
+}
+.grid-item image{
+ width:60rpx;
+ height: 60rpx;
+}
+.grid-item text{
+ margin-top: 10rpx;
+ font-size:24rpx;
+}
